@@ -1,0 +1,30 @@
+:root {
+  --pele-bg: var(--vp-c-bg);
+  --pele-fg: var(--vp-c-text-1);
+  --pele-muted: var(--vp-c-text-2);
+  --pele-line: var(--vp-c-text-2);
+  --pele-surface: var(--vp-c-bg-soft);
+  --pele-surface-alt: var(--vp-c-bg-alt);
+  --pele-border: var(--vp-c-divider);
+  --pele-accent: var(--vp-c-brand-1);
+  --pele-font: var(--vp-font-family-base);
+  --pele-font-mono: var(--vp-font-family-mono);
+  --pele-radius: 4px;
+}
+
+.pele-diagram {
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.pele-diagram > svg {
+  display: block;
+  margin-inline: auto;
+}
+
+@media print {
+  .pele-diagram {
+    overflow: visible;
+  }
+}

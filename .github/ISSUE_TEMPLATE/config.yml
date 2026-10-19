@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: VitePress documentation
+    url: https://vitepress.dev
+    about: Questions about VitePress itself, markdown config, or theming.
+  - name: Pele documentation
+    url: https://pele.run
+    about: Mermaid syntax support, rendering behavior and theming variables.

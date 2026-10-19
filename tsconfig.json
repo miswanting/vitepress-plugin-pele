@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "noEmit": true
+  },
+  "include": [
+    "src",
+    "tests",
+    "scripts",
+    "tsdown.config.ts",
+    "vitest.config.ts"
+  ],
+  "exclude": ["tests/fixtures", "dist", "node_modules"]
+}

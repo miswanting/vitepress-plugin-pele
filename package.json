@@ -1,0 +1,94 @@
+{
+  "name": "vitepress-plugin-pele",
+  "version": "0.1.0",
+  "description": "Render Mermaid diagrams in VitePress at build time with Pele — zero client-side JavaScript.",
+  "type": "module",
+  "license": "MIT",
+  "author": "miswanting",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miswanting/vitepress-plugin-pele.git"
+  },
+  "homepage": "https://github.com/miswanting/vitepress-plugin-pele#readme",
+  "bugs": {
+    "url": "https://github.com/miswanting/vitepress-plugin-pele/issues"
+  },
+  "keywords": [
+    "vitepress",
+    "vitepress-plugin",
+    "mermaid",
+    "pele",
+    "markdown-it",
+    "diagram",
+    "diagrams",
+    "svg",
+    "documentation"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./markdown-it": {
+      "types": "./dist/markdown-it.d.ts",
+      "import": "./dist/markdown-it.js"
+    },
+    "./style.css": "./style.css",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "style.css",
+    "CHANGELOG.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@12.5.1",
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "pnpm build && vitepress build tests/fixtures/site && node scripts/assert-build.mjs",
+    "check": "pnpm build && pnpm typecheck && pnpm test && pnpm test:e2e",
+    "prepublishOnly": "pnpm build && pnpm test"
+  },
+  "dependencies": {
+    "pele": "^1.6.0"
+  },
+  "peerDependencies": {
+    "markdown-it": ">=13.0.0",
+    "vitepress": ">=1.6.0"
+  },
+  "peerDependenciesMeta": {
+    "markdown-it": {
+      "optional": true
+    },
+    "vitepress": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^24.0.0",
+    "markdown-it": "^14.1.0",
+    "tsdown": "^0.23.1",
+    "typescript": "^5.9.0",
+    "vitepress": "2.0.0-alpha.20",
+    "vitest": "^4.0.0"
+  }
+}
