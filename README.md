@@ -2,10 +2,13 @@
 
 [![npm version](https://img.shields.io/npm/v/vitepress-plugin-pele.svg)](https://www.npmjs.com/package/vitepress-plugin-pele)
 [![CI](https://github.com/miswanting/vitepress-plugin-pele/actions/workflows/ci.yml/badge.svg)](https://github.com/miswanting/vitepress-plugin-pele/actions/workflows/ci.yml)
+[![Docs](https://github.com/miswanting/vitepress-plugin-pele/actions/workflows/docs.yml/badge.svg)](https://miswanting.github.io/vitepress-plugin-pele/)
 [![license](https://img.shields.io/npm/l/vitepress-plugin-pele.svg)](LICENSE)
 [![node](https://img.shields.io/node/v/vitepress-plugin-pele.svg)](package.json)
 
 Render Mermaid diagrams in VitePress **at build time** with [Pele](https://pele.run) — no mermaid.js bundle, no client-side JavaScript, no headless browser.
+
+**Docs and live demo:** <https://miswanting.github.io/vitepress-plugin-pele/>
 
 Write the same fenced code blocks you already have:
 
@@ -187,7 +190,8 @@ Because Pele is synchronous and does not need a DOM, this works in Node without 
 
 ## Playground
 
-The repository includes a VitePress 2 demo under [`playground/`](playground):
+The repository includes a VitePress 2 demo under [`playground/`](playground), deployed to
+<https://miswanting.github.io/vitepress-plugin-pele/> on every push to `main`:
 
 ```bash
 pnpm install

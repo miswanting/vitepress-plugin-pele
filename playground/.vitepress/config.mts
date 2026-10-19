@@ -1,7 +1,12 @@
 import { defineConfig } from "vitepress"
 import { peleMermaid } from "vitepress-plugin-pele"
 
+// GitHub Pages serves this project from /vitepress-plugin-pele/.
+// Local development and `vitepress preview` keep the root base.
+const base = process.env.DOCS_BASE ?? "/"
+
 export default defineConfig({
+  base,
   title: "vitepress-plugin-pele",
   description:
     "Mermaid diagrams for VitePress, rendered at build time with Pele",
