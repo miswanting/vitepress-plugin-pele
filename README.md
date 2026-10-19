@@ -185,6 +185,17 @@ In this entry `maxWidth` is left undefined by default, so Pele uses the diagram'
 
 Because Pele is synchronous and does not need a DOM, this works in Node without Puppeteer or Playwright. Text widths are estimated with Pele's built-in width table during the build; if your site uses a very different font metric, adjust `--pele-font` or pass `renderOptions.fontFamily`.
 
+## Playground
+
+The repository includes a VitePress 2 demo under [`playground/`](playground):
+
+```bash
+pnpm install
+pnpm dev:playground   # http://localhost:5180
+```
+
+It includes a diagram gallery, sizing examples, dark-mode theming, and the error-handling behavior.
+
 ## Compatibility
 
 | VitePress | Status |

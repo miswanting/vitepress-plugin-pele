@@ -1,0 +1,9 @@
+:root {
+  --pele-accent: var(--vp-c-brand-1);
+  --pele-radius: 6px;
+}
+
+/* Give the gallery a little breathing room on wide screens. */
+.vp-doc .pele-diagram {
+  margin: 1.25rem 0 2rem;
+}
