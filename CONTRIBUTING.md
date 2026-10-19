@@ -21,6 +21,7 @@ pnpm install
 | `src/markdown-it.ts` | Framework-agnostic markdown-it fence plugin |
 | `src/index.ts` | VitePress entry (`peleMermaid`) |
 | `style.css` | `--pele-*` → VitePress variable mapping |
+| `docs/` | Documentation site deployed to GitHub Pages |
 | `tests/` | Unit tests and the VitePress build fixture |
 | `scripts/assert-build.mjs` | Assertions for the e2e fixture output |
 
@@ -32,6 +33,7 @@ pnpm install
 | `pnpm typecheck` | Type-check sources and tests |
 | `pnpm test` | Run unit and VitePress markdown tests |
 | `pnpm test:e2e` | Build the package and a fixture site, then assert the HTML |
+| `pnpm dev:docs` | Run the documentation site at <http://localhost:5180> |
 | `pnpm check` | Build, typecheck, unit tests and e2e |
 
 Please run `pnpm check` before opening a pull request.

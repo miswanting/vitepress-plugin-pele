@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - "playground/**"
+      - "docs/**"
       - "src/**"
       - "style.css"
       - "package.json"
@@ -43,13 +43,13 @@ jobs:
       - run: pnpm build
 
       - name: Build documentation
-        run: pnpm exec vitepress build playground
+        run: pnpm exec vitepress build docs
         env:
           DOCS_BASE: /vitepress-plugin-pele/
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: playground/.vitepress/dist
+          path: docs/.vitepress/dist
 
   deploy:
     needs: build
