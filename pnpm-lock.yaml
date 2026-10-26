@@ -168,7 +168,7 @@ importers:
     dependencies:
       pele:
         specifier: ^1.6.0
-        version: 1.6.0
+        version: 1.9.0
     devDependencies:
       '@types/markdown-it':
         specifier: ^14.1.2
@@ -1022,8 +1022,8 @@ packages:
   pathe@2.0.3:
     resolution: {integrity: sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w==}
 
-  pele@1.6.0:
-    resolution: {integrity: sha512-VfAiVItsOGlGhvnBfphdT28VCG7mXMZxQNOwAGsCtxI2ztbUsT39MraEOYjsapLxVETkdUZscm0DdotYDQMLdw==}
+  pele@1.9.0:
+    resolution: {integrity: sha512-KUmBt7P5JduVKQaP6FKfXiRgH3LBVIKsmdgPJZU7jD3ye6F+Z8fbms+OjivE7rWY09Qx+5X65VKe/9ywKFJ9Sw==}
     engines: {node: '>=20'}
 
   perfect-debounce@2.1.0:
@@ -1992,7 +1992,7 @@ snapshots:
 
   pathe@2.0.3: {}
 
-  pele@1.6.0: {}
+  pele@1.9.0: {}
 
   perfect-debounce@2.1.0: {}
 
