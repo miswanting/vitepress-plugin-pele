@@ -7,6 +7,10 @@
   --pele-surface-alt: var(--vp-c-bg-alt);
   --pele-border: var(--vp-c-divider);
   --pele-accent: var(--vp-c-brand-1);
+  --pele-critical: var(--vp-c-danger-1);
+  --pele-error: var(--vp-c-danger-1);
+  --pele-fg-on-dark: var(--vp-c-white);
+  --pele-fg-on-light: var(--vp-c-black);
   --pele-font: var(--vp-font-family-base);
   --pele-font-mono: var(--vp-font-family-mono);
   --pele-radius: 4px;

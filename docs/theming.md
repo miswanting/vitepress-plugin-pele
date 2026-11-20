@@ -12,6 +12,10 @@ Pele colors its SVG with CSS variables, so the same static markup works in light
 | `--pele-surface-alt` | `--vp-c-bg-alt` |
 | `--pele-border` | `--vp-c-divider` |
 | `--pele-accent` | `--vp-c-brand-1` |
+| `--pele-critical` | `--vp-c-danger-1` |
+| `--pele-error` | `--vp-c-danger-1` |
+| `--pele-fg-on-dark` | `--vp-c-white` |
+| `--pele-fg-on-light` | `--vp-c-black` |
 
 Toggle the color mode in the navbar — the diagram is not re-rendered, only the CSS variables change.
 

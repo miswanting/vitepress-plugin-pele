@@ -153,6 +153,10 @@ Pele colors the SVG with CSS variables, so diagrams follow light and dark mode *
 | `--pele-surface-alt` | `--vp-c-bg-alt` |
 | `--pele-border` | `--vp-c-divider` |
 | `--pele-accent` | `--vp-c-brand-1` |
+| `--pele-critical` | `--vp-c-danger-1` |
+| `--pele-error` | `--vp-c-danger-1` |
+| `--pele-fg-on-dark` | `--vp-c-white` |
+| `--pele-fg-on-light` | `--vp-c-black` |
 | `--pele-font` | `--vp-font-family-base` |
 
 Override them in your own CSS:
