@@ -32,7 +32,7 @@ flowchart LR
 | Build dependency | none | none (no Chromium) |
 | Layout shift | on hydration | **none** |
 | Interactive zoom/pan | usually yes | not yet (planned) |
-| Syntax coverage | full Mermaid | Mermaid 12.1 types, stricter parsing |
+| Syntax coverage | full Mermaid | the Mermaid types Pele supports (see the gallery), stricter parsing |
 
 Pele is a fast, dependency-free Mermaid → SVG renderer used by Obsidian. It renders synchronously, which is what makes build-time rendering in a markdown-it fence possible.
 
@@ -227,7 +227,7 @@ Your Markdown does not change. Diagram features that depend on mermaid.js (custo
 ## Limitations
 
 - **Build-time only.** Diagrams are static SVG. Interactive zoom/pan is planned.
-- **Stricter parser.** Pele supports the Mermaid 12.1 diagram types but rejects some malformed diagrams mermaid.js tolerates.
+- **Stricter parser.** Pele covers the Mermaid diagram types plus several extras (see the [gallery](https://miswanting.github.io/vitepress-plugin-pele/gallery)), but rejects some malformed diagrams mermaid.js tolerates.
 - **No Mermaid config compatibility.** `theme`, `themeVariables`, and most directives are ignored; use CSS variables.
 - **Approximate text metrics at build time.** Pele measures labels with a built-in table when no canvas is available.
 - **No HTML labels.** Label content is sanitized and rendered as SVG text.
