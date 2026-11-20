@@ -4,7 +4,7 @@ Thanks for taking the time to contribute! This project is a small, focused plugi
 
 ## Requirements
 
-- Node.js 20 or newer (VitePress 2 requires Node 22)
+- Node.js 22.18 or newer for development (tsdown requires `^22.18.0 || ^24.11.0 || >=26.0.0`, VitePress 2 also needs Node 22). The published package itself still runs on Node 20: `dist/` targets node20 and `pele` supports Node 20.
 - pnpm 12 (`packageManager` in `package.json` is authoritative)
 
 ```bash
